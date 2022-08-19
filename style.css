@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* -----------------------------Variables----------------------------- */
+
 :root {
     --text-grey: hsl(233, 7%, 54%);
     --text-white: hsl(210, 17%, 98%);
@@ -45,13 +47,8 @@ ul{
     list-style-type: none;
 }
 
-body{
-    background:var();
-}
 
-
-
-/* Global Classes */
+/* -----------------------------Global Classes----------------------------- */
 
 .text-dark{
     color: var(--text-dark);
@@ -261,10 +258,53 @@ body{
 }
 
 
+/* -----------------------------Media Query----------------------------- */
+
+@media(min-width: 640px){
+
+}
 
 
+@media(min-width: 768px){
+    
+}
 
-/* NAV BAR */
+
+@media(min-width: 1024px){
+    #nav .toggle-btn>button{
+        display: none;
+    }
+
+    #nav{
+        flex-direction: row !important;
+    }
+
+    .collapse{
+        max-height: initial !important;
+    }
+
+    .collapse ul{
+        flex-direction: row !important;
+    }
+
+    .active{
+        max-height: 100% !important;
+    }
+}
+
+
+@media(min-width: 1280px){
+    #nav{
+        background: transparent !important;
+    }
+
+    #nav .flex-initial ul button{
+        display: inline-block !important;
+    }
+}
+
+
+/* -----------------------------NAV BAR----------------------------- */
 
 #nav{
     position: absolute;
@@ -280,6 +320,7 @@ body{
 #nav .collapse{
     max-height: 0;
     overflow-y: hidden;
+    transition: all 0.6s ease-in;
 }
 
 #nav .collapse ul{
@@ -308,5 +349,5 @@ body{
 }
 
 .active{
-    max-height: 50vh;
+    max-height: 50vh !important;
 }
