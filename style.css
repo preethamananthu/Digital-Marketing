@@ -104,3 +104,65 @@ body{
 .text-center{
     text-align: center;
 }
+
+.text-sm{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.text-md{
+    font-size: 1.5em;
+}
+
+.text-lg{
+    font-size: 2.2em;
+    line-height: 3em;
+}
+
+.text-xl{
+    font-size: 3em;
+}
+
+.text-2xl{
+    font-size: 5em;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-initial{
+    flex: 0 1 auto;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+.container{
+    
+}
