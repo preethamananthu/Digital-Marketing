@@ -7,7 +7,7 @@
     --text-dark: hsl(219, 57%, 24%);
     --text-dark2: hsla(215, 57%, 24%, 0.831);
     --text-red: hsl(349, 100%, 65%);
-    --box-shadow: 0 0 50PX 0 hsla(0, 0%, 0%, 0.1);
+    --box-shadow: 0 0 50px 0 hsla(0, 0%, 0%, 0.1);
     --bg-blue: hsl(270, 100%, 98%);
     --bg-red: rgb(254,247,252);
     --bg-yellow: rgb(255,255,245);
@@ -206,7 +206,7 @@ body{
     font-weight: bold;
 }
 
-.link :hover{
+.link:hover{
     color: var(--text-red);
 }
 
@@ -227,7 +227,7 @@ body{
     box-shadow: var(--box-shadow);
 }
 
-.btn-primary :hover{
+.btn-primary:hover{
     background: var(--bg-gradient-indigo);
 }
 
@@ -259,3 +259,25 @@ body{
 .w-50{
     width: 50%;
 }
+
+
+
+
+
+/* NAV BAR */
+
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background: var(--text-light);
+    flex-direction: column;
+}
+
+
+/* #nav .nav-brand > a{
+    font-size: 2rem;
+    font-weight: bold;
+} */
