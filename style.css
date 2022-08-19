@@ -116,7 +116,7 @@ body{
 
 .text-lg{
     font-size: 2.2em;
-    line-height: 3em;
+    line-height: 3rem;
 }
 
 .text-xl{
@@ -277,7 +277,36 @@ body{
 }
 
 
-/* #nav .nav-brand > a{
-    font-size: 2rem;
-    font-weight: bold;
-} */
+#nav .collapse{
+    max-height: 0;
+    overflow-y: hidden;
+}
+
+#nav .collapse ul{
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+#nav .collapse ul>li{
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1em;
+}
+
+#nav .toggle-btn>button{
+    font-size: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    color: var(--text-dark2);
+}
+
+#nav .flex-initial ul button{
+    display: none;
+}
+
+.active{
+    max-height: 50vh;
+}
