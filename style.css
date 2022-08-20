@@ -23,7 +23,7 @@
     --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
 
     --bg-cover: url('Assets/bgimg1.png');
-    --bg-image1: url('/Assetsimg1.png');
+    --bg-image1: url('/Assets/img1.png');
     --bg-image3: url('/Assets/img3.png');
     --bg-image2: url('/Assets/img2.png');
 
@@ -277,6 +277,10 @@ ul {
     .container{
         max-width: 768px;
     }
+
+    .md-text-left{
+        text-align: left;
+    }
 }
 
 
@@ -308,6 +312,10 @@ ul {
 
     .lg-cols-3{
         grid-template-columns: repeat(3,minmax(0,1fr));
+    }
+
+    .lg-cols-2{
+        grid-template-columns: repeat(2,minmax(0,1fr));
     }
 }
 
@@ -398,4 +406,49 @@ ul {
 
 #site-main .agency-area{
     padding: 5em 0;
+}
+
+
+/* -----------------------------DIGITAL LIFE----------------------------- */
+
+#site-main .life-area > .grid{
+    column-gap: 10em;
+}
+
+#site-main .life-area .grid-images{
+    display: grid;
+    grid-template-columns: repeat(16,minmax(10px,1fr));
+    grid-template-rows: repeat(8,minmax(100px,1fr));
+}
+
+#site-main .life-area .grid-images .item-one{
+    background: var(--text-grey);
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background: var(--bg-image1) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    filter: blur(1px);
+}
+
+#site-main .life-area .grid-images .item-two{
+    background: var(--text-grey);
+    grid-column-start: 9;
+    grid-column-end: 16;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background: var(--bg-image2) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    filter: blur(1px);
+}
+
+#site-main .life-area .grid-images .item-three{
+    grid-area: 3/4/8/14;
+    background: var(--bg-image3) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    z-index: 99;
 }
