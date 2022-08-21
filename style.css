@@ -10,8 +10,8 @@
     --text-dark2: hsla(215, 57%, 24%, 0.831);
     --text-red: hsl(349, 100%, 65%);
     --box-shadow: 0 0 50px 0 hsla(0, 0%, 0%, 0.1);
-    --bg-blue: hsl(270, 100%, 98%);
-    --bg-red: rgb(254, 247, 252);
+    --bg-blue: #faf2ff;
+    --bg-red: #fff7fb;
     --bg-yellow: rgb(255, 255, 245);
     --bg-purple: rgb(246, 255, 255);
 
@@ -90,8 +90,12 @@ ul {
     background: var(--bg-yellow);
 }
 
-.bg-gradient-red {
+.bg-gradient-purple {
     background: var(--bg-purple);
+}
+
+.bg-gradient-red {
+    background: var(--bg-red);
 }
 
 .font-poppins {
@@ -479,6 +483,7 @@ ul {
     grid-gap: 2px;
     border-radius: 20px;
     background-color: var(--text-light);
+    box-shadow: var(--box-shadow);
 }
 
 #site-main .counting-area .count-box .grid > div{
@@ -487,3 +492,10 @@ ul {
     text-align: center;
 }
 
+
+/* -----------------------------CARD AREA----------------------------- */
+
+#site-main .card-area .grid{
+    column-gap: 4em;
+    row-gap: 2em;
+}
