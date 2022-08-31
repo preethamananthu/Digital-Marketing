@@ -500,3 +500,16 @@ ul {
     column-gap: 4em;
     row-gap: 2em;
 }
+
+
+
+/* -----------------------------CARD AREA----------------------------- */
+#site-main .recent-work-area .images-flex .flex-item{
+    width: 360px;
+    margin-bottom: 50px;
+
+}
+
+#site-main .recent-work-area .images-flex .flex-item img{
+    border-radius: 10px;
+}
