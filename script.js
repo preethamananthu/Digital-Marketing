@@ -20,3 +20,8 @@ window.onload=function digital_fn(){        //exectues after the page loads
         fitWidth: true,
     })
 }
+
+
+var rellax=new Rellax('.rellax',{
+    center:true
+})
