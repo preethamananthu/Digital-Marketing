@@ -9,7 +9,7 @@
     --text-dark: hsl(219, 57%, 24%);
     --text-dark2: hsla(215, 57%, 24%, 0.831);
     --text-red: hsl(349, 100%, 65%);
-    --box-shadow: 0 0 50px 0 hsla(0, 0%, 0%, 0.1);
+    --box-shadow: 0 0 20px 0 hsla(0, 0%, 0%, 0.1);
     --bg-blue: #faf2ff;
     --bg-red: #fff7fb;
     --bg-yellow: rgb(255, 255, 245);
@@ -261,6 +261,9 @@ ul {
     width: 50%;
 }
 
+.btn-shadow{
+    box-shadow: var(--box-shadow);
+}
 
 /* -----------------------------Media Query----------------------------- */
 
@@ -272,6 +275,11 @@ ul {
 
     .sm-text-xl {
         font-size: 3em;
+    }
+
+    .sm-px-10{
+        padding-left: 3.5em;
+        padding-right: 3.5em;
     }
 }
 
@@ -503,7 +511,7 @@ ul {
 
 
 
-/* -----------------------------CARD AREA----------------------------- */
+/* -----------------------------RECENTS AREA----------------------------- */
 #site-main .recent-work-area .images-flex .flex-item{
     width: 360px;
     margin-bottom: 50px;
@@ -512,4 +520,29 @@ ul {
 
 #site-main .recent-work-area .images-flex .flex-item img{
     border-radius: 10px;
+}
+
+
+/* -----------------------------ARTICLE AREA----------------------------- */
+
+#site-main .article-area .grid{
+    column-gap: 5em;
+}
+
+#site-main .article-area .card article{
+    border-radius: 12px;
+}
+
+
+/* -----------------------------READY AREA----------------------------- */
+
+#site-main .ready-area .flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+}
+
+#site-main .ready-area .flex .w-50 p{
+    padding-top: 2em;
 }
